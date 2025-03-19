@@ -28,7 +28,7 @@ print(df.columns)
 print("\nTipos de datos de las columnas:")
 print(df.dtypes)
 
-# Verificar valores únicos en una columna (ejemplo: Gender)
+# Verificar valores únicos en una columna (Gender)
 if 'Gender' in df.columns:
     print("\nValores únicos en la columna 'Gender':")
     print(df['Gender'].unique())
@@ -42,13 +42,13 @@ df_clean = df.dropna()
 print("\nDataFrame limpio (sin valores nulos):")
 print(df_clean.head())
 
-# Crear un nuevo DataFrame con columnas específicas (ejemplo: Height y CWDistance)
+# Crear un nuevo DataFrame con columnas específicas (Height y CWDistance)
 if 'Height' in df.columns and 'CWDistance' in df.columns:
     df_subset = df[['Height', 'CWDistance']]
     print("\nSubset del DataFrame con columnas 'Height' y 'CWDistance':")
     print(df_subset.head())
 
-# Agregar una nueva columna calculada (ejemplo: Altura en centímetros si está en pulgadas)
+# Agregar una nueva columna calculada (Altura en centímetros si está en pulgadas)
 if 'Height' in df.columns:
     df['Height_cm'] = df['Height'] * 2.54
     print("\nDataFrame con nueva columna 'Height_cm':")
