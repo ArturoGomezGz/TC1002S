@@ -8,6 +8,10 @@ df = pd.read_csv(ruta)
 print("Primeras filas del DataFrame:")
 print(df.head())
 
+# Mostrar las ultimas filas del DataFrame
+print("Ultimas filas del DataFrame:")
+print(df.tail())
+
 # Resumen estadístico de las variables cuantitativas
 print("\nResumen estadístico:")
 print(df.describe())
@@ -53,4 +57,3 @@ if 'Height' in df.columns:
 # Guardar el DataFrame limpio en un nuevo archivo CSV
 df_clean.to_csv('./cartwheel_clean.csv', index=False)
 print("\nArchivo limpio guardado como 'cartwheel_clean.csv'.")
-
